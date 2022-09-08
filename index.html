@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>hiomework 10</title>
     <style>
         body,
         html,
@@ -25,15 +26,14 @@
             box-sizing: border-box;
         }
 
-        body {
-
-        }
+        body {}
 
         .wrapper {
             display: grid;
             grid-template-columns: 1fr 4fr;
             padding: 20px;
         }
+
         .sidebar {
             display: flex;
             flex-direction: column;
@@ -116,45 +116,47 @@
         }
     </style>
 </head>
+
 <body>
 
-<main class="wrapper">
-    <aside class="sidebar">
-        <section>
-            <h2 class="section__title">
-                Prices options
-            </h2>
-            <div>
-                <label>
-                    From
-                    <input type="range"><span></span>
-                </label>
-                <label>
-                    To
-                    <input type="range"><span></span>
-                </label>
-            </div>
-        </section>
-        <section>
-            <h2 class="section__title">
-                Sort
-            </h2>
-            <div class="sorters">
-                <button data-sorter="Max">
-                    Max price first
-                </button>
-                <button data-sorter="Min">
-                    Min price first
-                </button>
-            </div>
-        </section>
-    </aside>
-    <ul class="list">
-    </ul>
-</main>
+    <main class="wrapper">
+        <aside class="sidebar">
+            <section>
+                <h2 class="section__title">
+                    Prices options
+                </h2>
+                <div>
+                    <label>
+                        From
+                        <input type="range"><span></span>
+                    </label>
+                    <label>
+                        To
+                        <input type="range"><span></span>
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="section__title">
+                    Sort
+                </h2>
+                <div class="sorters">
+                    <button data-sorter="Max">
+                        Max price first
+                    </button>
+                    <button data-sorter="Min">
+                        Min price first
+                    </button>
+                </div>
+            </section>
+        </aside>
+        <ul class="list">
+        </ul>
+    </main>
 
-<script type="module" src="src/goods.js"></script>
-<script type="module" src="src/index.js"></script>
-<script type="module" src="src/renders.js"></script>
+    <script type="module" src="src/goods.js"></script>
+    <script type="module" src="src/index.js"></script>
+    <script type="module" src="src/renders.js"></script>
 </body>
+
 </html>
